@@ -1,4 +1,8 @@
 def draw_gym(type = "treadmill"):
+    listType = ["dumbbell", "treadmill"]
+    if type not in listType:
+        print("gym not found")
+        return
     print("========")
     print()
     if type == "dumbbell":
